@@ -1,24 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
- 
-struct btnode {
+ struct btnode {
     int value;
     struct btnode *l;
     struct btnode *r;
-};
+}:
 struct btnode *root;
 typedef struct btnode bt;
 bt *new,*ptr,*ptr1,*ptr2;
- 
-bt* create()
+ bt* create()
 {
     new = (bt *)malloc(sizeof(bt));
     new->l = NULL;
     new->r = NULL;
     return new;
 }
- 
-void construct_binary_tree()
+ void construct_binary_tree()
 {
     root = create();
     root->value = 50;
