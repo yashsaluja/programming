@@ -5,7 +5,7 @@ using namespace std;
  
 void bucketSort(float arr[], int n)
 {
-    //  Create n empty buckets
+ // empty buckets
     vector<float> b[n];
     
     //  Put array elements in different buckets
@@ -19,7 +19,6 @@ void bucketSort(float arr[], int n)
     for (int i=0; i<n; i++)
        sort(b[i].begin(), b[i].end());
  
-    //  Concatenate all buckets into arr[]
     int index = 0;
     for (int i = 0; i < n; i++)
         for (int j = 0; j < b[i].size(); j++)
