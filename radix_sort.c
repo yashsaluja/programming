@@ -52,8 +52,6 @@ void RadixSort(int a[], int n)
        printf("\n");
    }
 }
-
-//program starts here
 int main()
 {
    int i, n, a[10];
