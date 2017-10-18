@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
- 
-int main() {
+int main
+ {
    float a, b, c;
    float desc, root1, root2;
  
