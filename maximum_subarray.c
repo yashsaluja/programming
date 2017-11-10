@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-// Utility functions to get minimum of two integers
 int min (int x, int y) {return x < y? x : y; }
 
-// Utility functions to get maximum of two integers
+
+
 int max (int x, int y) {return x > y? x : y; }
 int maxSubarrayProduct(int arr[], int n)
 {
