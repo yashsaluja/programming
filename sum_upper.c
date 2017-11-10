@@ -10,7 +10,7 @@ int main() {
    printf("\nEnter the number of Columns : ");
    scanf("%d", &columns);
  
-   //Accept the Elements in Matrix
+   
    for (i = 0; i < rows; i++)
       for (j = 0; j < columns; j++) {
          printf("\nEnter the Element a[%d][%d] : ", i, j);
