@@ -5,13 +5,14 @@
 #define MAX 50
 int size;
  
-// Defining the stack structure
+
+
 struct stack {
    int arr[MAX];
    int top;
 };
  
-// Initializing the stack(i.e., top=-1)
+
 void init_stk(struct stack *st) {
    st->top = -1;
 }
@@ -25,7 +26,7 @@ void push(struct stack *st, int num) {
    st->arr[st->top] = num;
 }
  
-//Deleting an element from the stack.
+
 int pop(struct stack *st) {
    int num;
    if (st->top == -1) {
