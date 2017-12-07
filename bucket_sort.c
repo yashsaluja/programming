@@ -5,17 +5,17 @@ using namespace std;
  
 void bucketSort(float arr[], int n)
 {
- // empty buckets
+
     vector<float> b[n];
     
-    //  Put array elements in different buckets
+
     for (int i=0; i<n; i++)
     {
        int bi = n*arr[i]; 
        b[bi].push_back(arr[i]);
     }
  
-    //  Sort individual buckets
+
     for (int i=0; i<n; i++)
        sort(b[i].begin(), b[i].end());
  
