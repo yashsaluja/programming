@@ -4,6 +4,7 @@
 int fact(int);
  
 int main() {
+
    int factorial, num;
  
    printf("Enter the value of num :");
@@ -15,7 +16,8 @@ int main() {
    return (0);
 }
  
-int fact(int n) {
+int fact(int n)
+ {
    if (n == 0) {
       return (1);
    }
