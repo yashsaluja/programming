@@ -3,6 +3,7 @@ void countingsort(int arr[], int k, int n)
 {
     int i, j;
     int B[15], C[100];
+
     for (i = 0; i <= k; i++)
             C[i] = 0;
     for (j =1; j <= n; j++)
@@ -25,6 +26,7 @@ int main()
     printf("Enter the number of elements : ");
     scanf("%d", &n);
     printf("\n\nEnter the elements to be sorted :\n");
+    
     for ( i = 1; i <= n; i++)
     {
          scanf("%d", &arr[i]);
