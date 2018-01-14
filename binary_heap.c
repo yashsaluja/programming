@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #define MAX 20
 void maxheapify(int *, int, int);
+
 int* buildmaxheap(int *, int);
+
 void main()
 {
     int i, t, n;
@@ -11,12 +13,14 @@ void main()
     printf("Enter no of elements in the array\n");
     scanf("%d", &n);
     printf("Enter the array\n");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) 
+    {
         scanf("%d", &a[i]);
     }
     m = buildmaxheap(a, n);
     printf("The heap is\n");
-    for (t = 0; t < n; t++) {
+    for (t = 0; t < n; t++) 
+    {
         printf("%d\n", m[t]);
     }
 }
@@ -43,7 +47,8 @@ void maxheapify(int a[], int i, int heapsize)
             largest = i;
         if (right < (heapsize) && a[right] > a[largest])  
             largest = right;
-        if (largest != i) {
+        if (largest != i) 
+        {
             temp = a[i];
             a[i] = a[largest];
             a[largest] = temp;
