@@ -1,5 +1,6 @@
-#include <iostream>
+#include <stdio.h>
 #include <conio.h>
+
 using namespace std;
 
 void min_heapify(int *a,int i,int n)
@@ -33,19 +34,19 @@ void build_minheap(int *a, int n)
 int main()
 {
     int n, i, x;
-    cout<<"enter no of elements of array\n";
-    cin>>n;
+    printf("enter no of elements of array\n");
+    scanf("& n")
     int a[20];
     for (i = 1; i <= n; i++)
     {
-        cout<<"enter element"<<(i)<<endl;
-        cin>>a[i];
+        printf("enter element"(i) endl);
+        scanf("& i");
     }
     build_minheap(a, n);
-    cout<<"Min Heap\n";
+    printf("Min Heap\n");
     for (i = 1; i <= n; i++)
     {
-        cout<<a[i]<<endl;
+        printf(a[i] ,endl);
     }
     getch();
 }
