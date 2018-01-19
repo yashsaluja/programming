@@ -8,14 +8,19 @@ int main()
    int size, i;
 
    printf("Enter the number of elements: ");
-   scanf("%d", &size); 
+
+   scanf("%d", &size);
+
    printf("Enter the elements to be sorted:\n");
+
    for (i = 0; i < size; i++)
    {
        scanf("%d", &list[i]);
    } 
    quicksort(list, 0, size - 1);
+
    printf("After applying quick sort\n");
+
    for (i = 0; i < size; i++)
    {
        printf("%d ", list[i]);
@@ -50,6 +55,7 @@ void quicksort(int list[], int low, int high)
            }
        }
        temp = list[j];
+       
        list[j] = list[pivot];
        list[pivot] = temp;
        quicksort(list, low, j - 1);
