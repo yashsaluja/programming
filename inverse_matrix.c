@@ -3,6 +3,7 @@
 void reduction(float a[][6], int size, int pivot, int col)
  {
   int i, j;
+  
   float factor;
   factor = a[pivot][col];
 
