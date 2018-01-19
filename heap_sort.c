@@ -46,11 +46,14 @@ void main()
                heap[c] = temp;
            }
            root = c;
-       } while (c < j);
+       }
+        while (c < j);
    } 
    printf("\n The sorted array is : ");
+
    for (i = 0; i < no; i++)
       printf("\t %d", heap[i]);
+      
    printf("\n Complexity : \n Best case = Avg case = Worst case = O(n logn) \n");
 
 }
