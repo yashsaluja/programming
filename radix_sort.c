@@ -3,6 +3,7 @@
 int largest(int a[], int n)
 {
    int large = a[0], i;
+
    for(i = 1; i < n; i++)
    {
        if(large < a[i])
@@ -13,10 +14,13 @@ int largest(int a[], int n)
 void RadixSort(int a[], int n)
 {
    int bucket[10][10], bucket_count[10];
+
    int i, j, k, remainder, NOP=0, divisor=1, large, pass;
 
    large = largest(a, n);
+
    printf("The large element %d\n",large);
+   
    while(large > 0)
    {
        NOP++;
