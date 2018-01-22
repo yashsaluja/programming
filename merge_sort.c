@@ -55,7 +55,7 @@ int main()
 
    sort(0, max);
 
-   printf("\nList after sorting\n");
+   printf("\n List after sorting\n");
    
    for(i = 0; i <= max; i++)
       printf("%d ", a[i]);
