@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void countingsort(int arr[], int k, int n)
 {
     int i, j;
@@ -6,10 +7,13 @@ void countingsort(int arr[], int k, int n)
 
     for (i = 0; i <= k; i++)
             C[i] = 0;
+
     for (j =1; j <= n; j++)
             C[arr[j]] = C[arr[j]] + 1;
+            
     for (i = 1; i <= k; i++)
             C[i] = C[i] + C[i-1];
+
     for (j = n; j >= 1; j--)
     {
             B[C[arr[j]]] = arr[j];
