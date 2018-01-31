@@ -1,17 +1,22 @@
 #include<stdio.h>
 
-int main() {
+int main() 
+{
    FILE *fp1, *fp2;
+
    int ch1, ch2;
+
    char fname1[40], fname2[40];
 
    printf("Enter name of first file :");
+
    gets(fname1);
 
    printf("Enter name of second file:");
    gets(fname2);
 
    fp1 = fopen(fname1, "r");
+   
    fp2 = fopen(fname2, "r");
 
    if (fp1 == NULL) {
