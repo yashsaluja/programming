@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 20
+
 void maxheapify(int *, int, int);
 
 int* buildmaxheap(int *, int);
@@ -10,6 +11,7 @@ void main()
     int i, t, n;
 	int *a = calloc(MAX, sizeof(int));
     int *m = calloc(MAX, sizeof(int));
+
     printf("Enter no of elements in the array\n");
     scanf("%d", &n);
     printf("Enter the array\n");
@@ -24,6 +26,7 @@ void main()
         printf("%d\n", m[t]);
     }
 }
+
 int* buildmaxheap(int a[], int n)
 {
     int heapsize = n;
