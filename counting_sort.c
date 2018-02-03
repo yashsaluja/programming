@@ -3,15 +3,19 @@
 void countingsort(int arr[], int k, int n)
 {
     int i, j;
+
     int B[15], C[100];
 
     for (i = 0; i <= k; i++)
+
             C[i] = 0;
 
     for (j =1; j <= n; j++)
+
             C[arr[j]] = C[arr[j]] + 1;
             
     for (i = 1; i <= k; i++)
+
             C[i] = C[i] + C[i-1];
 
     for (j = n; j >= 1; j--)
@@ -19,8 +23,11 @@ void countingsort(int arr[], int k, int n)
             B[C[arr[j]]] = arr[j];
             C[arr[j]] = C[arr[j]] - 1;
     }
+    
     printf("\nThe Sorted array is :\n");
+
     for(i = 1; i <= n; i++)
+
           printf(" %d", B[i]);
 }
  
