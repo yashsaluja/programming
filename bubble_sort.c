@@ -6,15 +6,11 @@ int main()
 
      int i, j, num, arr[250], swap;
 
- 
-
      printf("Please enter the number of elements\n");
 
      scanf("%d", &num);
 
- 
-
-     printf("Enter %d numbers\n", num);
+    printf("Enter %d numbers\n", num);
 
      for (i = 0; i < num; i++)
 
@@ -30,7 +26,7 @@ int main()
 
             {
 
-                     if (arr[j] > arr[j+1]) /* For decreasing order,   */
+                     if (arr[j] > arr[j+1]) 
 
                      {
 
