@@ -6,30 +6,39 @@ main()
 {
    int choice, num;
    n = 0;
+
    while(1)
    {
        printf("1.Insert the element \n");
+
        printf("2.Delete the element \n");
+
        printf("3.Display all elements \n");
+
        printf("4.Quit \n");
+
        printf("Enter your choice : ");
        scanf("%d", &choice);
        switch(choice)
        {
        case 1:
+
            printf("Enter the element to be inserted to the list : ");
            scanf("%d", &num);
            insert(num, n);
            n = n + 1;
            break;
+
        case 2:
            printf("Enter the elements to be deleted from the list: ");
            scanf("%d", &num);
            delete(num);
            break;
+
        case 3:
-           display();
+        display();
            break;
+
        case 4:
            exit(0);
        default:
