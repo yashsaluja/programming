@@ -6,13 +6,15 @@ int main() {
   printf("\nEnter no of elements :");
   scanf("%d", &num);
 
-  //Reading values into Array
+  
   printf("\nEnter the values :");
+
   for (i = 0; i < num; i++)
      scanf("%d", &arr[i]);
 
   //Computation of total
   sum = 0;
+  
   for (i = 0; i < num; i++)
      sum = sum + arr[i];
 
