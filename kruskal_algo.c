@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
+
 int i,j,k,a,b,u,v,n,ne=1;
 int min,mincost=0,cost[9][9],parent[9];
 int find(int);
@@ -8,10 +9,12 @@ int uni(int,int);
 void main()
 {
  clrscr();
+
  printf("nntImplementation of Kruskal's algorithmnn");
  printf("nEnter the no. of verticesn");
  scanf("%d",&n);
  printf("nEnter the cost adjacency matrixn");
+
  for(i=1;i<=n;i++)
  {
   for(j=1;j<=n;j++)
@@ -21,7 +24,9 @@ void main()
     cost[i][j]=999;
   }
  }
+
  printf("nThe edges of Minimum Cost Spanning Tree arenn");
+
  while(ne<n)
  {
   for(i=1,min=999;i<=n;i++)
@@ -36,8 +41,10 @@ void main()
     }
    }
   }
+
   u=find(u);
   v=find(v);
+  
   if(uni(u,v))
   {
    printf("n%d edge (%d,%d) =%dn",ne++,a,b,min);
