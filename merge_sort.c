@@ -14,6 +14,7 @@ void merging(int low, int mid, int high)
    {
       if(a[l1] <= a[l2])
          b[i] = a[l1++];
+
       else
          b[i] = a[l2++];
    }
@@ -38,7 +39,8 @@ void sort(int low, int high)
       sort(low, mid);
       sort(mid+1, high);
       merging(low, mid, high);
-   } else
+   } 
+   else
     { 
       return;
    }   
