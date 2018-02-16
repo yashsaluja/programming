@@ -7,11 +7,14 @@ void main()
     struct node
     {
         int num;
+
         struct node *ptr;
     };
+    
     typedef struct node NODE;
  
     NODE *head, *first, *temp = 0;
+
     int count = 0;
     int choice = 1;
     first = 0;
