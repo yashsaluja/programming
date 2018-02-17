@@ -22,8 +22,11 @@ void main()
     while (choice)
     {
         head  = (NODE *)malloc(sizeof(NODE));
+
         printf("Enter the data item\n");
+
         scanf("%d", &head-> num);
+        
         if (first != 0)
         {
             temp->ptr = head;
