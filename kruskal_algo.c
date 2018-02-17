@@ -47,20 +47,25 @@ void main()
   
   if(uni(u,v))
   {
+
    printf("n%d edge (%d,%d) =%dn",ne++,a,b,min);
    mincost +=min;
   }
+
   cost[a][b]=cost[b][a]=999;
  }
+
  printf("ntMinimum cost = %dn",mincost);
  getch();
 }
+
 int find(int i)
 {
  while(parent[i])
   i=parent[i];
  return i;
 }
+
 int uni(int i,int j)
 {
  if(i!=j)
