@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 {
   int array[100], search, c, n;
@@ -27,9 +26,8 @@ int main()
         break;
      }
   }
-  
+
   if (c == n)
      printf("%d is not present in array.\n", search);
-
   return 0;
 }
