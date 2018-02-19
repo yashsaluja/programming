@@ -7,7 +7,9 @@ using namespace std;
 void max_heapify(int *a, int i, int n)
 {
     int j, temp;
+
     temp = a[i];
+
     j = 2 * i;
 
     while (j <= n)
@@ -24,9 +26,11 @@ void max_heapify(int *a, int i, int n)
             j = 2 * j;
         }
     }
+
     a[j/2] = temp;
     return;
 }
+
 void build_maxheap(int *a,int n)
 {
     int i;
@@ -35,6 +39,7 @@ void build_maxheap(int *a,int n)
         max_heapify(a,i,n);
     }
 }
+
 int main()
 {
     int n, i, x;
