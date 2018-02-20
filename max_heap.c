@@ -53,13 +53,12 @@ int main()
         cout<<"enter element"<<(i)<<endl;
         cin>>a[i];
     }
-
     build_maxheap(a,n);
     cout<<"Max Heap\n";
-    
     for (i = 1; i <= n; i++)
     {
         cout<<a[i]<<endl;
     }
+    
     getch();
 }
