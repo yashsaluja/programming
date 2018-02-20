@@ -1,10 +1,7 @@
 #include <stdio.h>
-
 int main()
-
 {
-
- int year;
+int year;
 
  printf("Enter a year to check if it is a leap year\n");
 
