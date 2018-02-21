@@ -46,7 +46,8 @@ int main()
   scanf("%d", &num);
 
   printf("\nEnter the wts and profits of each object:- ");
-  for (i = 0; i < num; i++) {
+  for (i = 0; i < num; i++)
+   {
      scanf("%f %f", &weight[i], &profit[i]);
   }
 
