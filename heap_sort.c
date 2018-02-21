@@ -26,8 +26,10 @@ void main()
    }
 
    printf("Heap array : ");
+   
    for (i = 0; i < no; i++)
        printf("%d\t ", heap[i]);
+
    for (j = no - 1; j >= 0; j--)
    {
        temp = heap[0];
@@ -49,6 +51,7 @@ void main()
        }
         while (c < j);
    } 
+
    printf("\n The sorted array is : ");
 
    for (i = 0; i < no; i++)
