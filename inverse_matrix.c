@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 void reduction(float a[][6], int size, int pivot, int col)
+
  {
   int i, j;
   
@@ -17,6 +18,7 @@ void reduction(float a[][6], int size, int pivot, int col)
      if (i != pivot) 
      {
         factor = a[i][col];
+
         for (j = 0; j < 2 * size; j++)
          {
            a[i][j] = a[i][j] - a[pivot][j] * factor;
@@ -37,7 +39,8 @@ void main()
         if (j == i + 3)
          {
            matrix[i][j] = 1;
-        } else 
+        }
+         else 
         {
            matrix[i][j] = 0;
         }
@@ -45,6 +48,7 @@ void main()
   }
 
   printf("\nEnter a 3 X 3 Matrix :");
+
   for (i = 0; i < 3; i++) 
   {
      for (j = 0; j < 3; j++)
@@ -59,9 +63,11 @@ void main()
   }
 
   printf("\nInvers Matrix");
+
   for (i = 0; i < 3; i++) 
   {
      printf("\n");
+     
      for (j = 0; j < 3; j++) 
      {
         printf("%8.3f", matrix[i][j + 3]);
