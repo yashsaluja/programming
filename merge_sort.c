@@ -11,6 +11,7 @@ void merging(int low, int mid, int high)
    int l1, l2, i;
 
    for(l1 = low, l2 = mid + 1, i = low; l1 <= mid && l2 <= high; i++) 
+
    {
       if(a[l1] <= a[l2])
          b[i] = a[l1++];
@@ -53,6 +54,7 @@ int main()
    printf("List before sorting\n");
    
    for(i = 0; i <= max; i++)
+
       printf("%d ", a[i]);
 
    sort(0, max);
@@ -60,5 +62,6 @@ int main()
    printf("\n List after sorting\n");
    
    for(i = 0; i <= max; i++)
+   
       printf("%d ", a[i]);
 }
