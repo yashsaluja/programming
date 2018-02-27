@@ -30,12 +30,15 @@ void main()
         if (first != 0)
         {
             temp->ptr = head;
+
             temp = head;
         }
+
         else
         {
             first = temp = head;
         }
+        
         fflush(stdin);
         printf("Do you want to continue(Type 0 or 1)?\n");
         scanf("%d", &choice);
