@@ -38,22 +38,28 @@ void main()
         {
             first = temp = head;
         }
-        
+
         fflush(stdin);
+
         printf("Do you want to continue(Type 0 or 1)?\n");
+
         scanf("%d", &choice);
  
     }
+
     temp->ptr = 0;
 
     temp = first;
+
     printf("\n status of the linked list is\n");
+
     while (temp != 0)
     {
         printf("%d=>", temp->num);
         count++;
         temp = temp -> ptr;
     }
+    
     printf("NULL\n");
     printf("No. of nodes in the list = %d\n", count);
 }
