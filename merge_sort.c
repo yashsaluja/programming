@@ -36,10 +36,12 @@ void merging(int low, int mid, int high)
 
 void sort(int low, int high)
  {
+
    int mid;
    
    if(low < high)
     {
+
       mid = (low + high) / 2;
 
       sort(low, mid);
@@ -48,8 +50,10 @@ void sort(int low, int high)
       
       merging(low, mid, high);
    } 
+
    else
     { 
+      
       return;
    }   
 }
