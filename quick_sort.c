@@ -31,6 +31,7 @@ int main()
 }
 void quicksort(int list[], int low, int high)
 {
+    
    int pivot, i, j, temp;
    if (low < high)
    {
@@ -46,7 +47,9 @@ void quicksort(int list[], int low, int high)
            while (list[j] > list[pivot] && j >= low)
            {
                j--;
-           }
+           
+            }
+
            if (i < j)
            {
                temp = list[i];
@@ -57,8 +60,11 @@ void quicksort(int list[], int low, int high)
        temp = list[j];
        
        list[j] = list[pivot];
+
        list[pivot] = temp;
+
        quicksort(list, low, j - 1);
+
        quicksort(list, j + 1, high);
    }
 }
