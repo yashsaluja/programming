@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void countingsort(int arr[], int k, int n)
 {
     int i, j;
@@ -35,6 +36,7 @@ int main()
     int n,i,k = 0, arr[15];
 
     printf("Enter the number of elements : ");
+
     scanf("%d", &n);
 
     printf("\n\nEnter the elements to be sorted :\n");
@@ -42,6 +44,7 @@ int main()
     for ( i = 1; i <= n; i++)
     {
          scanf("%d", &arr[i]);
+
          if (arr[i] > k)
          {
             k = arr[i];
@@ -49,6 +52,7 @@ int main()
     }
     
     countingsort(arr, k, n);
+    
     return 0;
  
 }
