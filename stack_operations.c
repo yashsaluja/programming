@@ -7,50 +7,61 @@ int size;
  
 
 
-struct stack {
+struct stack
+ {
    int arr[MAX];
    int top;
 };
  
 
-void init_stk(struct stack *st) {
+void init_stk(struct stack *st)
+ {
    st->top = -1;
 }
  
-void push(struct stack *st, int num) {
-   if (st->top == size - 1) {
+void push(struct stack *st, int num) 
+{
+   if (st->top == size - 1)
+    {
       printf("\nStack overflow(i.e., stack full).");
       return;
    }
+
    st->top++;
    st->arr[st->top] = num;
 }
  
 
-int pop(struct stack *st) {
+int pop(struct stack *st)
+ {
    int num;
-   if (st->top == -1) {
+   if (st->top == -1)
+    {
       printf("\nStack underflow(i.e., stack empty).");
       return NULL;
    }
+
    num = st->arr[st->top];
    st->top--;
    return num;
 }
  
-void display(struct stack *st) {
+void display(struct stack *st) 
+{
    int i;
    for (i = st->top; i >= 0; i--)
       printf("\n%d", st->arr[i]);
 }
  
-int main() {
+int main()
+ {
    int element, opt, val;
    struct stack ptr;
    init_stk(&ptr);
    printf("\nEnter Stack Size :");
    scanf("%d", &size);
-   while (1) {
+   while (1) 
+   {
       printf("\n\ntSTACK PRIMITIVE OPERATIONS");
       printf("\n1.PUSH");
       printf("\n2.POP");
