@@ -4,6 +4,7 @@
 
 struct node
 {
+
 int data;
 struct node *next;
 }*start=NULL;
@@ -41,14 +42,17 @@ char ch;
 
 void display()
 {
+
 struct node *new_node;
  printf("The Linked List : n");
  new_node=start;
  while(new_node!=NULL)
    {
+
    printf("%d--->",new_node->data);
    new_node=new_node->next;
    }
+   
   printf("NULL");
 }
 
