@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void main()
 {
    int heap[10], no, i, j, c, root, temp;
@@ -31,6 +30,7 @@ void main()
            c = root;
 
        }
+
         while (c != 0);
    }
 
@@ -45,6 +45,7 @@ void main()
        heap[0] = heap[j    
        heap[j] = temp;
        root = 0;
+
        do 
        {
            c = 2 * root + 1;   
@@ -56,6 +57,7 @@ void main()
                heap[root] = heap[c];
                heap[c] = temp;
            }
+           
            root = c;
        }
         while (c < j);
