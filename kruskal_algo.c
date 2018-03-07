@@ -8,6 +8,7 @@ int find(int);
 int uni(int,int);
 void main()
 {
+
  clrscr();
 
  printf("nntImplementation of Kruskal's algorithmnn");
@@ -17,8 +18,10 @@ void main()
 
  for(i=1;i<=n;i++)
  {
+
   for(j=1;j<=n;j++)
   {
+
    scanf("%d",&cost[i][j]);
    if(cost[i][j]==0)
     cost[i][j]=999;
@@ -61,6 +64,7 @@ void main()
 
 int find(int i)
 {
+
  while(parent[i])
   i=parent[i];
  return i;
@@ -68,8 +72,10 @@ int find(int i)
 
 int uni(int i,int j)
 {
+
  if(i!=j)
  {
+   
   parent[j]=i;
   return 1;
  }
