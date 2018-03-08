@@ -21,6 +21,8 @@ void countingsort(int arr[], int k, int n)
     for (j = n; j >= 1; j--)
     {
             B[C[arr[j]]] = arr[j];
+
+
             C[arr[j]] = C[arr[j]] - 1;
     }
     
@@ -47,6 +49,7 @@ int main()
 
          if (arr[i] > k)
          {
+                 
             k = arr[i];
          }
     }
