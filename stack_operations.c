@@ -56,11 +56,17 @@ void display(struct stack *st)
 int main()
  {
    int element, opt, val;
+
    struct stack ptr;
+
    init_stk(&ptr);
+
    printf("\nEnter Stack Size :");
+
    scanf("%d", &size);
+
    while (1) 
+   
    {
       printf("\n\ntSTACK PRIMITIVE OPERATIONS");
       printf("\n1.PUSH");
