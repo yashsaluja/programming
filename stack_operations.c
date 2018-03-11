@@ -93,13 +93,17 @@ int main()
          element = pop(&ptr);
          printf("\nThe element popped from stack is : %d", element);
          break;
-         
+
       case 3:
+
          printf("\nThe current stack elements are:");
          display(&ptr);
          break;
+
       case 4:
+
          exit(0);
+         
       default:
          printf("\nEnter correct option!Try again.");
       }
