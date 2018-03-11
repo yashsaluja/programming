@@ -4,8 +4,6 @@
  
 #define MAX 50
 int size;
- 
-
 
 struct stack
  {
@@ -13,7 +11,6 @@ struct stack
    int top;
 };
  
-
 void init_stk(struct stack *st)
  {
    st->top = -1;
@@ -103,8 +100,9 @@ int main()
       case 4:
 
          exit(0);
-         
+
       default:
+      
          printf("\nEnter correct option!Try again.");
       }
    }
