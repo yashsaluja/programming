@@ -80,15 +80,20 @@ int main()
 
       switch (opt) 
       {
+
       case 1:
+
          printf("\nEnter the element into stack:");
          scanf("%d", &val);
          push(&ptr, val);
          break;
+
       case 2:
+
          element = pop(&ptr);
          printf("\nThe element popped from stack is : %d", element);
          break;
+         
       case 3:
          printf("\nThe current stack elements are:");
          display(&ptr);
@@ -99,6 +104,6 @@ int main()
          printf("\nEnter correct option!Try again.");
       }
    }
-   
+
    return (0);
 }
