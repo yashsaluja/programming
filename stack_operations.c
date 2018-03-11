@@ -28,6 +28,7 @@ void push(struct stack *st, int num)
    }
 
    st->top++;
+
    st->arr[st->top] = num;
 }
  
@@ -66,7 +67,7 @@ int main()
    scanf("%d", &size);
 
    while (1) 
-   
+
    {
       printf("\n\ntSTACK PRIMITIVE OPERATIONS");
       printf("\n1.PUSH");
@@ -76,7 +77,9 @@ int main()
       printf("\n");
       printf("\nEnter your option : ");
       scanf("%d", &opt);
-      switch (opt) {
+
+      switch (opt) 
+      {
       case 1:
          printf("\nEnter the element into stack:");
          scanf("%d", &val);
@@ -96,5 +99,6 @@ int main()
          printf("\nEnter correct option!Try again.");
       }
    }
+   
    return (0);
 }
