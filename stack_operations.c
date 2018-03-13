@@ -33,6 +33,7 @@ void push(struct stack *st, int num)
 int pop(struct stack *st)
  {
    int num;
+   
    if (st->top == -1)
     {
       printf("\nStack underflow(i.e., stack empty).");
@@ -47,6 +48,7 @@ int pop(struct stack *st)
 void display(struct stack *st) 
 {
    int i;
+
    for (i = st->top; i >= 0; i--)
       printf("\n%d", st->arr[i]);
 }
@@ -69,9 +71,11 @@ int main()
       printf("\n\ntSTACK PRIMITIVE OPERATIONS");
       printf("\n1.PUSH");
       printf("\n2.POP");
+
       printf("\n3.DISPLAY");
       printf("\n4.QUIT");
       printf("\n");
+
       printf("\nEnter your option : ");
       scanf("%d", &opt);
 
@@ -85,7 +89,7 @@ int main()
          scanf("%d", &val);
 
          push(&ptr, val);
-         
+
          break;
 
       case 2:
