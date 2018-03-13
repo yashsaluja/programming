@@ -81,8 +81,11 @@ int main()
       case 1:
 
          printf("\nEnter the element into stack:");
+
          scanf("%d", &val);
+
          push(&ptr, val);
+         
          break;
 
       case 2:
@@ -102,7 +105,7 @@ int main()
          exit(0);
 
       default:
-      
+
          printf("\nEnter correct option!Try again.");
       }
    }
