@@ -29,11 +29,10 @@ void push(struct stack *st, int num)
    st->arr[st->top] = num;
 }
  
-
 int pop(struct stack *st)
  {
    int num;
-   
+
    if (st->top == -1)
     {
       printf("\nStack underflow(i.e., stack empty).");
@@ -42,6 +41,7 @@ int pop(struct stack *st)
 
    num = st->arr[st->top];
    st->top--;
+   
    return num;
 }
  
