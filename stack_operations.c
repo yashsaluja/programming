@@ -36,12 +36,14 @@ int pop(struct stack *st)
    if (st->top == -1)
     {
       printf("\nStack underflow(i.e., stack empty).");
+
       return NULL;
    }
 
    num = st->arr[st->top];
-   st->top--;
    
+   st->top--;
+
    return num;
 }
  
