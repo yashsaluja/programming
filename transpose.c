@@ -13,18 +13,23 @@ int main()
   for (c = 0; c < m; c++)
 
      for(d = 0; d < n; d++)
+     
         scanf("%d",&matrix[c][d]);
 
   for (c = 0; c < m; c++)
-  
+
      for( d = 0 ; d < n ; d++ )
+
         transpose[d][c] = matrix[c][d];
 
   printf("Transpose of entered matrix :-\n");
 
-  for (c = 0; c < n; c++) {
+  for (c = 0; c < n; c++)
+   {
      for (d = 0; d < m; d++)
+
         printf("%d\t",transpose[c][d]);
+
      printf("\n");
   }
 
