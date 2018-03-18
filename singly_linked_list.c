@@ -12,7 +12,9 @@ struct node *next;
 
 void creat()
 {
+
 char ch;
+
  do
  {
   struct node *new_node,*current;
@@ -20,7 +22,9 @@ char ch;
   new_node=(struct node *)malloc(sizeof(struct node));
 
   printf("nEnter the data : ");
+
   scanf("%d",&new_node->data);
+  
   new_node->next=NULL;
 
   if(start==NULL)
