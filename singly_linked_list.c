@@ -24,12 +24,14 @@ char ch;
   printf("nEnter the data : ");
 
   scanf("%d",&new_node->data);
-  
+
   new_node->next=NULL;
 
   if(start==NULL)
+
   {
   start=new_node;
+  
   current=new_node;
   }
   else
