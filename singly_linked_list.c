@@ -31,7 +31,7 @@ char ch;
 
   {
   start=new_node;
-  
+
   current=new_node;
   }
   else
@@ -41,17 +41,21 @@ char ch;
   }
 
  printf("nDo you want to creat another : ");
+
  ch=getche();
- }while(ch!='n');
+
+ }
+ while(ch!='n');
 }
-
-
 void display()
 {
 
 struct node *new_node;
+
+
  printf("The Linked List : n");
  new_node=start;
+ 
  while(new_node!=NULL)
    {
 
