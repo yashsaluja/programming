@@ -5,16 +5,10 @@ int main()
 {
 
      int i, j, num, arr[250], pos, temp;
-
- 
-
-     printf("Enter number of elements\n");
+       printf("Enter number of elements\n");
 
      scanf("%d", &num);
-
- 
-
-     printf("Enter %d integers\n", num);
+      printf("Enter %d integers\n", num);
 
  
 
@@ -30,9 +24,7 @@ int main()
 
           pos = i;
 
- 
-
-           for ( j = i + 1 ; j < num ; j++ )
+            for ( j = i + 1 ; j < num ; j++ )
 
            {
 
